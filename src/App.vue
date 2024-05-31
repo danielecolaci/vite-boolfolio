@@ -45,8 +45,7 @@ export default {
   <div id="app" class="container mt-5">
     <div v-if="loading" class="text-center">Loading...</div>
     <div v-else class="row">
-      <ProjectCard v-for="project in projects" :key="project.id" :project="project" :base_api_url="base_api_url"
-        class="col-md-4" />
+      <ProjectCard v-for="project in projects" :key="project.id" :project="project" :base_api_url="base_api_url" />
     </div>
   </div>
 </template>
