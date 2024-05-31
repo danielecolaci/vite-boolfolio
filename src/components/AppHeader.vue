@@ -22,7 +22,7 @@ export default {
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <router-link class="nav-link" to="/">Home</router-link>
                         </li>

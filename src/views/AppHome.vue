@@ -12,7 +12,7 @@ export default {
                     <img src="/img/avatar.png" alt="" class="avatar mb-5">
                     <h1 class="name">Hi There, I'm <span class="highlight">Daniele Colaci</span></h1>
                     <p class="intro">I Am a <span class="highlight">FullStack Developer</span></p>
-                    <router-link class="btn btn-info my-5" to="/projects">Projects</router-link>
+                    <router-link class="btn btn-info my-5" to="/projects">View my Projects</router-link>
                     <div class="social-icons mt-4">
                         <a href="https://www.linkedin.com/in/danielecolaci/" target="_blank"><i
                                 class="fab fa-linkedin"></i></a>
