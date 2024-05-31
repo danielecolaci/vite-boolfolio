@@ -8,11 +8,11 @@ export default {
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-white" id="nav">
             <div class="container">
-                <!-- <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+                <router-link class="navbar-brand d-flex align-items-center" to="/">
                     <div class="logo_laravel">
-                        <img src="{{ Vite::asset('resources/img/avatar.png') }}" alt="" style="width: 50px">
+                        <img src="/img/avatar.png" alt="" style="width: 50px">
                     </div>
-                </a> -->
+                </router-link>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -24,13 +24,13 @@ export default {
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a> -->
+                            <router-link class="nav-link" to="/">Home</router-link>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="{{ url('/projects') }}">{{ __('Projects') }}</a> -->
+                            <router-link class="nav-link" to="/projects">Projects</router-link>
                         </li>
                         <li class="nav-item">
-                            <!-- <a class="nav-link" href="{{ url('/contacts') }}">{{ __('Contacts') }}</a> -->
+                            <router-link class="nav-link" to="/contacts">Contacts</router-link>
                         </li>
                     </ul>
 
