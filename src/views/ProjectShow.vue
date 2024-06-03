@@ -14,11 +14,11 @@ export default {
     methods: {
         callAPI() {
             const url = this.base_api_url + this.base_projects_url + this.$route.params.id;
-            console.log(url);
+            /* console.log(url); */
             axios
                 .get(url)
                 .then(response => {
-                    console.log(response);
+                    /* console.log(response); */
                     this.project = response.data.response;
                 }).catch(err => {
                     console.error(err);

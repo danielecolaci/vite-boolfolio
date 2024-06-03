@@ -18,9 +18,11 @@ export default {
     <div class="card mb-4 border-0">
         <div class="row g-0">
             <div class="col-md-4">
-                <img v-if="project.image.startsWith('uploads')" :src="base_api_url + '/storage/' + project.image"
-                    alt="Project Image" class="img-fluid rounded-start">
-                <img v-else :src="project.image" alt="Project Image" class="img-fluid rounded-start">
+                <router-link :to="{ name: 'project', params: { id: project.id } }">
+                    <img v-if="project.image.startsWith('uploads')" :src="base_api_url + '/storage/' + project.image"
+                        alt="Project Image" class="img-fluid rounded-start">
+                    <img v-else :src="project.image" alt="Project Image" class="img-fluid rounded-start">
+                </router-link>
             </div>
             <div class="col-md-8">
                 <div class="card-body">
